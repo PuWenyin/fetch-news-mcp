@@ -14,3 +14,6 @@ dependencies = [
 [project.scripts]
 # 命令名 = "模块名:函数名"
 fetch-news = "mcp_app:main"
+
+[tool.setuptools]
+py-modules = ["mcp_app"]
