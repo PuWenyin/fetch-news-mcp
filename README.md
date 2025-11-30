@@ -1,3 +1,4 @@
+```json
 {
   "mcpServers": {
     "fetch-news": {
@@ -13,3 +14,4 @@
     }
   }
 }
+```
