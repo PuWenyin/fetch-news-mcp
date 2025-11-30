@@ -9,23 +9,12 @@ from openai import OpenAI
 from urllib.parse import urljoin
 
 # ================= 配置区域 =================
-# # 请确保环境变量中设置了 OPENAI_API_KEY，或者直接在这里填入（不推荐直接填入代码库）
-# API_KEY = "sk-fbe26ec1b4cf428b917ec95109620457" 
-# # 如果你使用的是中转或者自定义端点，请修改 base_url
-# BASE_URL = "https://dashscope.aliyuncs.com/compatible-mode/v1/"
+# 请确保环境变量中设置了 OPENAI_API_KEY
+API_KEY = os.getenv("OPENAI_API_KEY")
+# 如果你使用的是中转或者自定义端点，请修改 base_url
+BASE_URL = os.getenv("BASE_URL", "https://dashscope.aliyuncs.com/compatible-mode/v1/")
 
-# # 请确保环境变量中设置了 OPENAI_API_KEY，或者直接在这里填入（不推荐直接填入代码库）
-# API_KEY = "sk-hhgcxqxkiuidbzzldynghwwmyjfbgxlsghfoiwbuimdynmli" 
-# # 如果你使用的是中转或者自定义端点，请修改 base_url
-# BASE_URL = "https://api.siliconflow.cn/v1/"
-
-
-# # 请确保环境变量中设置了 OPENAI_API_KEY，或者直接在这里填入（不推荐直接填入代码库）
-# API_KEY = "sk-OfQI6UXBTozOT4eYgn8da3irFGtXEJbI5k7Zq4rhVA3fH9q1" 
-# # 如果你使用的是中转或者自定义端点，请修改 base_url
-# BASE_URL = "https://api.302.ai/v1"
-
-MODEL_NAME = "qwen-flash"
+MODEL_NAME = os.getenv("MODEL_NAME", "qwen-flash")
 
  
 
