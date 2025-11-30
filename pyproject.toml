@@ -16,4 +16,4 @@ dependencies = [
 fetch-news = "mcp_app:main"
 
 [tool.setuptools]
-py-modules = ["mcp_app"]
+py-modules = ["main", "mcp_app"]
